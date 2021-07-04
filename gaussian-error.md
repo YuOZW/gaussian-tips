@@ -2,6 +2,7 @@
 「Error termination via Lnk1e in」の続きを確認する。
 - 参考：https://computational-chemistry.com/top/gaussian-error-message/
 - 参考：http://bbs.keinsci.com/thread-4829-1-1.html
+- 参考：https://www.hpc.co.jp/chem/software/gaussian/gaussian_nyumon/
 
 ## L502: Convergence failure
 ```
@@ -244,22 +245,42 @@ Error termination via Lnk1e in C:\G09W\l301.exe at Sun Mar 26 18:00:32 2017.
 Job cpu time:       0 days  0 hours  0 minutes  1.0 seconds.
 File lengths (MBytes):  RWF=      5 Int=      0 D2E=      0 Chk=      1 Scr=      1
 ```
-**原因**：電荷とスピン多重度の組み合わせが間違っている。  
-**対処法**：  
+**原因**：電荷とスピン多重度の組み合わせが間違っている。GaussView上でゴースト原子が残っていることがある。
+**対処法**：その点を修正する。GaussViewのGaussian Calculation Setupを用いて自動でスピン多重度を指定して確認できる。  
  
-## : 
+## L301: R6DS8: Unable to choose the S8 parameter
 ```
-
+IExCor=  408 DFT=T Ex=B Corr=PW91 ExCW=0 ScaHFX=  0.000000
+ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+IRadAn=      0 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=141
+NAtoms=    1 NActive=    1 NUniq=    1 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+Integral buffers will be    262144 words long.
+Raffenetti 2 integral format.
+Two-electron integral symmetry is turned on.
+R6DS8: Unable to choose the S8 parameter, IExCor=  408 IXCFnc=  0 ScaHFX=  0.000000 IDFTD=4
+Error termination via Lnk1e in C:\G09W\l301.exe at Wed Jul 12 20:20:24 2017.
 ```
-**原因**：  
-**対処法**：  
+**原因**：DFTの汎関数とEmpiricalDispersionの組み合わせが間違っている。使えない組み合わせがある。  
+**対処法１**：GD3BJを用いている場合、GD3を適用してみる。  
+**対処法２**：汎関数を変更する。  
  
-## : 
+## L301: R6DRCv: No XXXX available for IA=XX
 ```
-
+Integral buffers will be    262144 words long.
+Raffenetti 2 integral format.
+Two-electron integral symmetry is turned on.
+R6DC6: No C6 coefficient available for IA= 96
+Error termination via Lnk1e in C:\G09W\l301.exe at Sat Mar 17 13:56:16 2018.
 ```
-**原因**：  
-**対処法**：  
+```
+Integral buffers will be    262144 words long.
+Raffenetti 2 integral format.
+Two-electron integral symmetry is turned on.
+R6DRCv: No RCov radius available for IA=                  96
+Error termination via Lnk1e in C:\G09W\l301.exe at Sat Mar 17 13:57:31 2018.
+```
+**原因**：EmpiricalDispersionのパラメーターがない元素がある。上記の例ではキュリウムCm (96番元素)にEmpiricalDispersionを適用してエラーとなっている。  
+**対処法**：EmpiricalDispersionは使用できない。  
  
 ## : 
 ```
