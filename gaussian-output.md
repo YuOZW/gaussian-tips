@@ -100,7 +100,7 @@ Title Card Required
  ******************************************
 ```
 
-### 「%」から始まる設定
+### インプットに書いた「%」から始まる設定
 ```
  %nprocshared=1
  Will use up to    1 processors via shared memory.
@@ -108,7 +108,7 @@ Title Card Required
  %chk=filename.chk
 ```
 
-### 「#」から始まる設定
+### インプットに書いた「#」から始まる設定
 ```
  ----------
  # hf/3-21g
@@ -126,7 +126,7 @@ Title Card Required
  99/5=1,9=1/99;
 ```
 
-### タイトル
+### インプットに書いたタイトル
 ```
  -------------------
  Title Card Required
@@ -171,7 +171,7 @@ Title Card Required
 ```
 
 ### 分子式、分子構造の点群等の情報
-Framework groupは良くチェックする。
+Framework groupはよくチェックする。
 ```
  Stoichiometry    CH4
  Framework group  T[O(C),4C3(H)]
@@ -202,6 +202,7 @@ Framework groupは良くチェックする。
 ```
 
 ### 基底関数、電子数等の情報
+```17 basis functions```や```27 primitive gaussians```の部分で系の大きさを判断する。  
 核間反発エネルギーも出力される。
 ```
  Standard basis: 3-21G (6D, 7F)
@@ -256,6 +257,8 @@ Framework groupは良くチェックする。
 ```
 
 ### SCF計算の結果
+```SCF Done:  E(RHF) =  -39.9764058488```の数値がSCFエネルギー。  
+```A.U. after    8 cycles```の部分で何回のSCFサイクルで収束したかが分かる。この回数が多い場合(20回以上？)はSCFが正常に終了していないことがあるのでチェックした方が良い。
 ```
  SCF Done:  E(RHF) =  -39.9764058488     A.U. after    8 cycles
             NFock=  8  Conv=0.25D-09     -V/T= 2.0003
