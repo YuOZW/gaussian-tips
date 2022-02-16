@@ -1,11 +1,11 @@
-インプットファイルで`#p`と`Pop=Regular`と`GFOldPrint`を使う。
+インプットファイルで`#p`と`Pop=Regular`と`GFInput`を使う。
 
 ```
 %nprocshared=2
 %mem=4GB
 %chk=filename_NTO1.chk
 #p wb97xd/def2svp scrf=(smd,solvent=thf) nosymm
-Geom=AllCheck Guess=(Read,Only) Density=(Check,Transition=1) Pop=(Regular,NTO,SaveNTO) GFOldPrint
+Geom=AllCheck Guess=(Read,Only) Density=(Check,Transition=1) Pop=(Regular,NTO,SaveNTO) GFInput
 
 ```
 ---
