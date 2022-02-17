@@ -1,3 +1,4 @@
+## 巨大なOpen-shellの分子のNTOを可視化したい時
 インプットファイルで`#p`と`Pop=Regular`と`GFInput`を使う。
 
 ```
