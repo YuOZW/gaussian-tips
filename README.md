@@ -4,7 +4,7 @@
 - [多成分同時スキャン](/gaussian-input/gaussian-multiscan.md)
 - [極めて遷移状態がフラットな場合のIRC](/gaussian-irc/flat_irc.md)
 - [ModRedundantとCartesianを同時に指定したい時](/gaussian-input/modredundant_cartesian.md)
-- [巨大なOpen-shellの分子のNTOを可視化したい時](/gaussian-input/nto_large_molecule.md)
+- [巨大な分子のNTOを可視化したい時](/gaussian-input/nto_large_molecule.md)
 
 # xTB-tips
 - [xTBを用いた束縛条件下での構造最適化](/xtb-input/xtb-constrain.md)
