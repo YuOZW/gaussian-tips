@@ -1,4 +1,5 @@
 # Gaussian-tips
+- [良く使うインプット](/gaussian-input/gaussian_routine.md)
 - [Gaussianのアウトプットの説明](/gaussian-output/gaussian-output.md)
 - [Gaussianのエラーの説明と対処法](/gaussian-error/gaussian-error.md)
 - [多成分同時スキャン](/gaussian-input/gaussian-multiscan.md)
