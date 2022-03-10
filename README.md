@@ -9,3 +9,6 @@
 
 # xTB-tips
 - [xTBを用いた束縛条件下での構造最適化](/xtb-input/xtb-constrain.md)
+
+# ORCA-tips
+- [Gaussianの結果をOrcaのGuessに使う](/orca-input/orca-guess.md)
