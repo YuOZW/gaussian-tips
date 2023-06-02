@@ -12,3 +12,6 @@
 
 # ORCA-tips
 - [Gaussianの結果をOrcaのGuessに使う](/orca-input/orca-guess.md)
+
+# PSI4-tips
+- [良く使うインプット](/psi4-input/input.md)
