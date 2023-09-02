@@ -6,6 +6,7 @@
 - [極めて遷移状態がフラットな場合のIRC](/gaussian-irc/flat_irc.md)
 - [ModRedundantとCartesianを同時に指定したい時](/gaussian-input/modredundant_cartesian.md)
 - [巨大な分子のNTOを可視化したい時](/gaussian-input/nto_large_molecule.md)
+- [NBOの"molecular unit"を制御する](/gaussian-input/nbo.md)
 
 # xTB-tips
 - [xTBを用いた束縛条件下での構造最適化](/xtb-input/xtb-constrain.md)
