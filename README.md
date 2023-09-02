@@ -8,6 +8,7 @@
 - [巨大な分子のNTOを可視化したい時](/gaussian-input/nto_large_molecule.md)
 - [NBOの"molecular unit"を制御する](/gaussian-input/nbo.md)
 - [水素原子のみを構造最適化](/gaussian-input/only_h.md)
+- [ホモリティック開裂のスキャン](/gaussian-input/homolytic_scan.md)
 
 # xTB-tips
 - [xTBを用いた束縛条件下での構造最適化](/xtb-input/xtb-constrain.md)
