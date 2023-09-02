@@ -18,3 +18,6 @@
 
 # PSI4-tips
 - [良く使うインプット](/psi4-input/input.md)
+
+# GRRM-tips
+- [EQリストの整理（同一分子判定）](/grrm-input/analyze_eq.md)
